@@ -1,0 +1,3 @@
+Seul ce répertoire doit être accessible par le serveur Apache.
+Il contient un fichier masqué .htaccess contenant les règles de ré-écriture pour l'API Rest
+En production, les autres répertoires devraient être situés en dehors de l'espace de publication Web du serveur pour des questions de sécurité

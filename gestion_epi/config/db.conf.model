@@ -1,0 +1,10 @@
+<?php
+//Configuration base de données pour l'application EPI
+
+define('USER','vincent');
+define('PASSWD','');
+define('BASE','epi');
+define('HOST','localhost');
+define('SGBD','mysql');
+
+?>
