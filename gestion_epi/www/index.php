@@ -15,6 +15,7 @@ spl_autoload_register('importClass');
 
 use view\DefaultView;
 use controller\ManufacturerCtrl;
+use controller\TypeCtrl;
 
 
 /**
@@ -38,7 +39,12 @@ switch ($route) {
         
         $ctrl = new ManufacturerCtrl();
         break;
-            
+        
+    case 'types':
+        
+        $ctrl = new TypeCtrl();
+        break;
+        
     default:
         $ctrl = new DefaultView();
         $ctrl->error404();

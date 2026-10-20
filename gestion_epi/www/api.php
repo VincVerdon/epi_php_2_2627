@@ -16,6 +16,7 @@ spl_autoload_register('importClass');
 
 use api\ErrorApi;
 use api\ManufacturerApi;
+use api\TypeApi;
 
 
 /**
@@ -35,9 +36,12 @@ switch ($route) {
         new ManufacturerApi();
         break;
         
+    case 'types':
+        new TypeApi();
+        break;
+        
     default:
         new ErrorApi();
         break;
         
 }
-
